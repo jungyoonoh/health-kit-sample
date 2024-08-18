@@ -6,19 +6,29 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    @StateObject private var heartRateManager = HeartRateManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let heartRate = heartRateManager.heartRate {
+                Text("Heart Rate: \(heartRate) BPM")
+                    .font(.largeTitle)
+            } else {
+                Text("Fetching Heart Rate...")
+                    .font(.largeTitle)
+            }
         }
-        .padding()
+        .onAppear {
+            heartRateManager.start()
+        }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
