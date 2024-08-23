@@ -17,6 +17,7 @@
 		CE82571F2C61F7B400C71FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE82571E2C61F7B400C71FFE /* Assets.xcassets */; };
 		CE8257222C61F7B400C71FFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8257212C61F7B400C71FFE /* Preview Assets.xcassets */; };
 		CE82572F2C61F87100C71FFE /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82572E2C61F87100C71FFE /* HeartRateManager.swift */; };
+		CE96ACD12C78B96400F9BD0A /* VenderIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96ACD02C78B96400F9BD0A /* VenderIDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CE82572C2C61F7C800C71FFE /* WatchWithIosApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchWithIosApp.entitlements; sourceTree = "<group>"; };
 		CE82572D2C61F7CC00C71FFE /* WatchWithIosApp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchWithIosApp Watch App.entitlements"; sourceTree = "<group>"; };
 		CE82572E2C61F87100C71FFE /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
+		CE96ACD02C78B96400F9BD0A /* VenderIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenderIDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				CE82571E2C61F7B400C71FFE /* Assets.xcassets */,
 				CE8257202C61F7B400C71FFE /* Preview Content */,
 				CE82572E2C61F87100C71FFE /* HeartRateManager.swift */,
+				CE96ACD02C78B96400F9BD0A /* VenderIDManager.swift */,
 			);
 			path = "WatchWithIosApp Watch App";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE96ACD12C78B96400F9BD0A /* VenderIDManager.swift in Sources */,
 				CE82571D2C61F7B300C71FFE /* ContentView.swift in Sources */,
 				CE82572F2C61F87100C71FFE /* HeartRateManager.swift in Sources */,
 				CE82571B2C61F7B300C71FFE /* WatchWithIosAppApp.swift in Sources */,
